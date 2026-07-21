@@ -1,0 +1,61 @@
+version: 2
+models:
+  - name: fact_transactions
+    columns:
+      - name: transaction_id
+        data_tests:
+          - unique
+          - not_null
+      - name: account_id
+        data_tests:
+          - not_null
+          - relationships:
+              arguments: 
+                to: ref('dim_accounts')
+                field: account_id
+
+      - name: security_id
+        data_tests:
+          - not_null
+          - relationships:
+              arguments: 
+                to: ref('dim_securities')
+                field: security_id
+
+      - name: advisor_id
+        data_tests:
+          - not_null
+          - relationships:
+              arguments: 
+                to: ref('dim_advisors')
+                field: advisor_id
+
+      - name: transaction_type
+        data_tests:
+          - accepted_values:
+              arguments: 
+                values: ['BUY', 'SELL']
+
+      - name: quantity
+        data_tests:
+          - not_null
+
+      - name: price
+        data_tests:
+          - not_null
+
+      - name: trade_value
+        data_tests:
+          - not_null
+          
+      - name: brokerage_fee
+        data_tests:
+          - not_null
+
+      - name: tax_amount
+        data_tests:
+          - not_null
+
+      - name: transaction_date
+        data_tests:
+          - not_null

@@ -1,0 +1,193 @@
+version: 2
+
+models:
+
+  - name: stg_advisors
+    description: Clean advisor data
+
+    columns:
+
+      - name: advisor_id
+        data_tests:
+          - unique
+          - not_null
+
+      - name: advisor_name
+        data_tests:
+          - not_null
+
+      - name: email
+        data_tests:
+          - not_null
+
+      - name: hire_date
+        data_tests:
+          - not_null
+
+      - name: status
+        data_tests:
+          - accepted_values:
+              arguments:
+                values:
+                  - Active
+                  - Inactive
+
+  - name: stg_customers
+    description: Clean customer data
+
+    columns:
+
+      - name: customer_id
+        data_tests:
+          - unique
+          - not_null
+
+      - name: advisor_id
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('stg_advisors')
+                field: advisor_id
+
+      - name: email
+        data_tests:
+          - not_null
+
+      - name: gender
+        data_tests:
+          - accepted_values:
+              arguments:
+                values:
+                  - Male
+                  - Female
+
+      - name: risk_profile
+        data_tests:
+          - accepted_values:
+              arguments:
+                values:
+                  - Low
+                  - Medium
+                  - High
+
+      - name: status
+        data_tests:
+          - accepted_values:
+              arguments:
+                values:
+                  - Active
+
+  - name: stg_accounts
+    description: Clean account data
+
+    columns:
+
+      - name: account_id
+        data_tests:
+          - unique
+          - not_null
+
+      - name: customer_id
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('stg_customers')
+                field: customer_id
+
+      - name: account_type
+        data_tests:
+          - accepted_values:
+              arguments:
+                values:
+                  - Savings
+                  - Current
+                  - Demat
+                  - Investment
+
+      - name: currency
+        data_tests:
+          - accepted_values:
+              arguments:
+                values:
+                  - INR
+
+      - name: status
+        data_tests:
+          - accepted_values:
+              arguments:
+                values:
+                  - Open
+                  - Closed
+                  - Active
+
+  - name: stg_securities
+    description: Clean securities data
+
+    columns:
+
+      - name: security_id
+        data_tests:
+          - unique
+          - not_null
+
+      - name: currency
+        data_tests:
+          - accepted_values:
+              arguments:
+                values:
+                  - INR
+
+      - name: exchange
+        data_tests:
+          - accepted_values:
+              arguments:
+                values:
+                  - NSE
+                  - BSE
+
+      - name: status
+        data_tests:
+          - accepted_values:
+              arguments:
+                values:
+                  - Active
+                  - Inactive
+
+  - name: stg_transactions
+    description: Clean transaction data
+
+    columns:
+
+      - name: transaction_id
+        data_tests:
+          - unique
+          - not_null
+
+      - name: account_id
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('stg_accounts')
+                field: account_id
+
+      - name: security_id
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('stg_securities')
+                field: security_id
+
+      - name: advisor_id
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('stg_advisors')
+                field: advisor_id
+
+      - name: transaction_type
+        data_tests:
+          - accepted_values:
+              arguments:
+                values:
+                  - BUY
+                  - SELL

@@ -1,0 +1,11 @@
+version : 2
+sources:
+  - name: raw
+    database : FINANCIAL_DWH
+    schema: RAW
+    tables:
+      - name: RAW_ADVISORS
+      - name: RAW_ACCOUNTS
+      - name: RAW_CUSTOMERS
+      - name: RAW_SECURITIES
+      - name: RAW_TRANSACTIONS
