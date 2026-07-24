@@ -1,0 +1,73 @@
+{{ config(materialized = 'table')}}
+
+WITH CUSTOMER_ADVISORS AS (
+    SELECT
+        C.CUSTOMER_ID,
+        C.FIRST_NAME,
+        C.LAST_NAME,
+        A.ADVISOR_ID,
+        A.ADVISOR_NAME,
+        A.BRANCH,
+        ACC.ACCOUNT_ID,
+        ACC.ACCOUNT_TYPE,
+
+    FROM {{ ref('dim_advisors') }} A
+    LEFT JOIN {{ ref('dim_customers') }} C
+        ON A.ADVISOR_ID = C.ADVISOR_ID
+    
+    LEFT JOIN {{ ref('dim_accounts') }} ACC
+        ON C.CUSTOMER_ID = ACC.CUSTOMER_ID
+),
+ADVISOR_TRANSACTIONS AS (
+    SELECT
+        CA.CUSTOMER_ID,
+        T.TRANSACTION_ID,
+        T.TRANSACTION_DATE,
+        CA.ADVISOR_ID,
+        CA.ADVISOR_NAME,
+        CA.BRANCH,
+        CA.ACCOUNT_ID,
+        CA.ACCOUNT_TYPE,
+        T.TRANSACTION_TYPE,
+        T.TRADE_VALUE,
+        T.BROKERAGE_FEE,
+        T.TAX_AMOUNT
+    FROM CUSTOMER_ADVISORS AS CA
+    LEFT JOIN {{ ref('fact_transactions') }} AS T
+        ON T.ACCOUNT_ID = CA.ACCOUNT_ID
+)
+SELECT
+    ADVISOR_ID,
+    ADVISOR_NAME,
+    BRANCH,
+    COUNT(DISTINCT CUSTOMER_ID) AS CUSTOMER_MANAGED,
+    COUNT(DISTINCT ACCOUNT_ID) AS ACCOUNTS_MANAGED,
+    COUNT(TRANSACTION_ID) AS TRANSACTIONS_DONE,
+    coalesce(SUM(
+        CASE
+            WHEN UPPER(TRANSACTION_TYPE) = 'BUY'
+            THEN TRADE_VALUE
+            ELSE 0
+        END
+        ),0
+    ) AS TOTAL_BUY_VALUE,
+
+    coalesce(SUM(
+        CASE
+            WHEN UPPER(TRANSACTION_TYPE) = 'SELL'
+            THEN TRADE_VALUE
+            ELSE 0
+        END
+        ),0
+    ) AS TOTAL_SELL_VALUE,
+
+    coalesce(SUM(BROKERAGE_FEE), 0)  AS TOTAL_BROKERAGE,
+
+    coalesce(SUM(TAX_AMOUNT), 0) AS TOTAL_TAX_AMOUNT,
+
+    coalesce(AVG(TRADE_VALUE), 0)AS AVG_TRADE_VALUE,
+
+    MAX(TRANSACTION_DATE) AS LAST_TRANSACTION_DATE,
+
+FROM ADVISOR_TRANSACTIONS
+GROUP BY ADVISOR_ID, ADVISOR_NAME, BRANCH
