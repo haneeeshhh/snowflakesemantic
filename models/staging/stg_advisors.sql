@@ -21,5 +21,19 @@ WITH RANKED AS(
                 ) AS RN
     FROM {{ source('raw', 'RAW_ADVISORS')}}
 )
-SELECT * FROM RANKED
+SELECT
+    ADVISOR_ID,
+    ADVISOR_NAME,
+    BRANCH,
+    EMAIL,
+    PHONE,
+    HIRE_DATE,
+    STATUS,
+    SOURCE_SYSTEM,
+    BATCH_ID,
+    LOAD_DATE,
+    RECORD_CREATED_TS,
+    RECORD_UPDATED_TS,
+    RN
+FROM RANKED
 WHERE RN = 1
