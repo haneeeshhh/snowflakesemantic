@@ -22,7 +22,7 @@ WITH RANKED AS (
             ) AS RN
     FROM {{ source('raw', 'RAW_SECURITIES')}}
 )
-SELECT 
+SELECT
     SECURITY_ID,
     TICKER,
     SECURITY_NAME,
