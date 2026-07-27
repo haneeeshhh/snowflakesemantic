@@ -2,8 +2,14 @@
 {{
     config(
         unique_key = 'ADVISOR_ID',
-        strategy='timestamp',
-        updated_at='record_updated_ts'
+        strategy='check',
+        check_cols=[
+            'ADVISOR_NAME',
+            'BRANCH',
+            'EMAIL',
+            'PHONE',
+            'STATUS'
+        ]
     )
 }}
 SELECT

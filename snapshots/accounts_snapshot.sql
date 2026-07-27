@@ -2,8 +2,14 @@
 {{
     config(
         unique_key = 'ACCOUNT_ID',
-        strategy='timestamp',
-        updated_at='record_updated_ts'
+        strategy='check',
+        check_cols=[
+            'CUSTOMER_ID',
+            'ACCOUNT_TYPE',
+            'BRANCH',
+            'CURRENCY',
+            'STATUS'
+        ]
     )
 }}
 SELECT 

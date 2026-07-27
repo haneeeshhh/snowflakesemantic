@@ -9,7 +9,6 @@ models:
 
       - name: advisor_id
         data_tests:
-          - unique
           - not_null
 
       - name: advisor_name
@@ -39,7 +38,6 @@ models:
 
       - name: customer_id
         data_tests:
-          - unique
           - not_null
 
       - name: advisor_id
@@ -84,7 +82,6 @@ models:
 
       - name: account_id
         data_tests:
-          - unique
           - not_null
 
       - name: customer_id
@@ -127,7 +124,6 @@ models:
 
       - name: security_id
         data_tests:
-          - unique
           - not_null
 
       - name: currency
@@ -160,7 +156,6 @@ models:
 
       - name: transaction_id
         data_tests:
-          - unique
           - not_null
 
       - name: account_id

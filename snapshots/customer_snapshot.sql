@@ -2,8 +2,18 @@
 {{
     config(
         unique_key = 'customer_id',
-        strategy='timestamp',
-        updated_at='record_updated_ts'
+        strategy='check',
+        check_cols=[
+            'FIRST_NAME',
+            'LAST_NAME',
+            'DOB',
+            'GENDER',
+            'EMAIL',
+            'PHONE',
+            'CITY',
+            'STATE',
+            'ADVISOR_ID',
+        ]
     )
 }}
 SELECT

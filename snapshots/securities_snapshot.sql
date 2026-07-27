@@ -2,8 +2,16 @@
 {{
     config(
         unique_key = 'SECURITY_ID',
-        strategy = 'timestamp',
-        updated_at = 'record_updated_ts'
+        strategy = 'check',
+        check_cols = [
+            'TICKER',
+            'SECURITY_NAME',
+            'ASSET_CLASS',
+            'SECTOR',
+            'CURRENCY',
+            'EXCHANGE',
+            'STATUS'
+        ]
     )
 }}
 SELECT
