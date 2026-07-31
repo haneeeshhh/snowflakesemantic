@@ -1,0 +1,8 @@
+version: 2
+models:
+  - name: customer_history
+
+    columns:
+      - name: customer_id
+        data_tests:
+          - one_current_customer

@@ -1,4 +1,7 @@
-{{ config(materialized='table')}}
+{{ config(
+    materialized='table',
+    post_hook="{{ audit_log('dim_customers') }}"
+    )}}
 
 SELECT
     CUSTOMER_ID,

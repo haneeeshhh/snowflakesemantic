@@ -71,21 +71,11 @@ SELECT
     ) AS SELL_TRANSACTION,
 
     coalesce(SUM(QUANTITY), 0) AS TOTAL_QUANTITY,
-    coalesce(SUM(
-        CASE
-            WHEN UPPER(TRANSACTION_TYPE) = 'BUY'
-            THEN TRADE_VALUE
-            ELSE 0
-        END),0
-    ) AS TOTAL_BUY_VALUE,
-        
-    coalesce(SUM(
-        CASE
-            WHEN UPPER(TRANSACTION_TYPE) = 'SELL'
-            THEN TRADE_VALUE
-            ELSE 0
-        END),0
-    ) AS TOTAL_SELL_VALUE,
+
+    {{ sum_transaction_type('BUY', 'TRADE_VALUE') }} AS MACRO_BUY_VALUE,
+
+    {{ sum_transaction_type('SELL', 'TRADE_VALUE') }} AS MACRO_SELL_VALUE,
+    
 
     coalesce(SUM(BROKERAGE_FEE), 0) AS TOTAL_BROKERAGE,
     COALESCE(SUM(TAX_AMOUNT), 0) AS TOTAL_TAX,

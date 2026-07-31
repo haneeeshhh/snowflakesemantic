@@ -47,24 +47,9 @@ SELECT
 
     COUNT(TRANSACTION_ID) AS TOTAL_TRANSACTIONS,
 
-    coalesce(
-        SUM(
-            CASE
-                WHEN UPPER(TRANSACTION_TYPE) = 'BUY'
-                THEN trade_value
-                ELSE 0
-            END
-        ), 0
-    ) AS TOTAL_BUY_VALUE,
+    {{ sum_transaction_type('BUY', 'TRADE_VALUE') }} AS MACRO_BUY_VALUE,
 
-    coalesce(SUM(
-            CASE
-                WHEN UPPER(TRANSACTION_TYPE) = 'SELL'
-                THEN TRADE_VALUE
-                ELSE 0
-            END
-        ),0
-    ) AS TOTAL_SELL_VALUE,
+    {{ sum_transaction_type('SELL', 'TRADE_VALUE') }} AS MACRO_SELL_VALUE,
 
     coalesce(
         SUM(

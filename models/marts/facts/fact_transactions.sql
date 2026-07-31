@@ -1,7 +1,8 @@
 {{
     config(
         materialized='incremental',
-        incremental_strategy='append'
+        incremental_strategy='append',
+        post_hook="{{ audit_log('fact_transactions') }}"
     )
 }}
 SELECT
@@ -23,10 +24,4 @@ SELECT
     RECORD_UPDATED_TS
 FROM {{ ref('stg_transactions') }}
 
-{% if is_incremental() %}
-WHERE RECORD_UPDATED_TS > 
-(
-    SELECT MAX(RECORD_UPDATED_TS)
-    FROM {{ this }}
-)
-{% endif %}
+{{ inremental_filter('record_updated_ts') }}

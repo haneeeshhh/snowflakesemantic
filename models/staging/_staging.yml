@@ -153,6 +153,13 @@ models:
     description: Clean transaction data
 
     columns:
+      - name: trade_value
+        data_tests:
+          - trade_value_check
+          
+      - name: brokerage_fee
+        data_tests:
+          - trade_value_check
 
       - name: transaction_id
         data_tests:
