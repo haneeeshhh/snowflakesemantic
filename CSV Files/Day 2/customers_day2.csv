@@ -1,0 +1,86 @@
+customer_id,first_name,last_name,gender,dob,email,phone,city,state,advisor_id,risk_profile,annual_income,status,source_system,batch_id,load_date,record_created_ts,record_updated_ts
+CUST00362,Zinal,Viswanathan,Male,1970-02-18,hemasuri@example.com,9686579303,Chennai,Maharashtra,ADV0012,High,1735228,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.675959,2026-07-19
+CUST00074,Akshay,Reddy,Female,1955-12-11,shenoyjacob@example.net,9119540831,Pune,Telangana,ADV0007,High,1798575,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.650412,2026-07-19
+CUST00375,Daniel,Dutta,Female,1956-07-21,lsarma@example.net,9026855092,Hyderabad,Telangana,ADV0015,Low,2136764,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.676936,2026-07-19
+CUST00156,Jeevika,Rao,Female,1968-10-09,zaid10@example.net,9796233790,Chennai,Tamil Nadu,ADV0015,Low,1116436,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.661661,2026-07-19
+CUST00105,Hritik,Swaminathan,Male,1991-11-10,fborah@example.com,9295310485,Chennai,Tamil Nadu,ADV0015,High,1522416,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.657383,2026-07-19
+CUST00395,Wazir,Vaidya,Male,1996-01-11,champak66@example.com,9262950628,Pune,Karnataka,ADV0005,Medium,2394744,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.678411,2026-07-19
+CUST00378,Yuvraj,Subramaniam,Female,1970-08-04,jdixit@example.net,9239670711,Hyderabad,Maharashtra,ADV0002,Low,3022581,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.677141,2026-07-19
+CUST00125,Ekantika,Mutti,Male,1959-04-18,singhriya@example.net,9149827706,Hyderabad,Tamil Nadu,ADV0009,Medium,1017319,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.659455,2026-07-19
+CUST00069,Rajata,Swamy,Male,2006-09-29,apall@example.com,9790779946,Chennai,Telangana,ADV0004,Medium,2685175,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.649870,2026-07-19
+CUST00451,Thomas,Karpe,Female,1996-12-12,hpandit@example.net,9110053353,Bengaluru,Karnataka,ADV0012,Medium,3047185,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.682269,2026-07-19
+CUST00010,Madhavi,Lanka,Female,2004-04-11,bmangal@example.net,9726600539,Chennai,Telangana,ADV0008,Low,2469770,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.645908,2026-07-19
+CUST00195,Advay,Lal,Male,1988-06-14,daviddani@example.com,9795285932,Chennai,Telangana,ADV0003,Medium,2058786,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.664334,2026-07-19
+CUST00407,Garima,Barad,Female,1955-08-13,gokhalezayan@example.net,9957970516,Chennai,Tamil Nadu,ADV0018,Low,2448479,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.679237,2026-07-19
+CUST00085,Lavanya,Khosla,Female,1979-05-28,vincentshenoy@example.net,9585582861,Chennai,Karnataka,ADV0014,Medium,2010856,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.652896,2026-07-19
+CUST00372,Jack,Chandran,Female,1999-11-29,andralakshit@example.net,9093349856,Pune,Maharashtra,ADV0003,High,2114079,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.676692,2026-07-19
+CUST00389,Lila,Nagy,Male,1979-10-11,msahota@example.net,9634036506,Hyderabad,Maharashtra,ADV0010,High,2405464,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.677998,2026-07-19
+CUST00496,Lipika,Suri,Male,1981-01-13,chandran53@example.net,9453035110,Pune,Tamil Nadu,ADV0015,Low,1614393,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.685326,2026-07-19
+CUST00031,Urvashi,Gara,Male,1988-10-01,yutika95@example.org,9034126396,Pune,Tamil Nadu,ADV0005,High,2719167,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.647192,2026-07-19
+CUST00317,Ishanvi,Kapoor,Male,1989-02-20,kritikamohanty@example.net,9031994523,Pune,Karnataka,ADV0008,High,2176909,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.672535,2026-07-19
+CUST00409,Jagat,Warrior,Female,1950-11-17,bathelijah@example.com,9100604502,Chennai,Maharashtra,ADV0019,Medium,448122,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.679362,2026-07-19
+CUST00491,Upadhriti,Maharaj,Male,2000-11-11,ekapadwali@example.org,9234760738,Bengaluru,Maharashtra,ADV0018,Low,1168871,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.685012,2026-07-19
+CUST00492,Adya,Peri,Male,1976-11-15,bgoyal@example.net,9249817734,Hyderabad,Maharashtra,ADV0011,Medium,2187751,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.685073,2026-07-19
+CUST00281,Elijah,Badal,Male,1984-08-09,lalatanveer@example.org,9542621108,Bengaluru,Telangana,ADV0005,Medium,1996067,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.669883,2026-07-19
+CUST00357,Luke,Mutti,Male,2000-07-22,farissura@example.com,9646412689,Pune,Maharashtra,ADV0012,Medium,2548935,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.675586,2026-07-19
+CUST00077,Aarnav,Mandal,Female,1992-08-25,cdixit@example.net,9028492780,Pune,Telangana,ADV0017,Medium,2567161,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.651951,2026-07-19
+CUST00462,Aditya,Goda,Male,1974-12-26,zansiwalla@example.net,9602632297,Bengaluru,Karnataka,ADV0002,Medium,2551122,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.683041,2026-07-19
+CUST00498,Banjeet,Bobal,Male,1998-12-08,kalitazilmil@example.org,9213500298,Bengaluru,Telangana,ADV0014,Medium,604694,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.685455,2026-07-19
+CUST00212,Nitara,Saha,Male,1982-11-11,lipikakibe@example.com,9768820204,Bengaluru,Karnataka,ADV0012,Medium,2133843,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.665436,2026-07-19
+CUST00102,Atharv,Deep,Female,1951-05-26,ekiyababu@example.org,9697808098,Pune,Maharashtra,ADV0018,Low,1010826,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.657182,2026-07-19
+CUST00335,Mekhala,Nanda,Female,2000-03-22,yarora@example.net,9753041955,Pune,Maharashtra,ADV0015,High,2556715,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.673968,2026-07-19
+CUST00476,Ranbir,Sabharwal,Male,2001-09-14,prana@example.org,9585126461,Hyderabad,Karnataka,ADV0011,Medium,2716893,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.684026,2026-07-19
+CUST00337,Leela,Sunder,Female,1983-09-19,lbarad@example.com,9450455977,Hyderabad,Tamil Nadu,ADV0010,Medium,2419549,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.674121,2026-07-19
+CUST00441,Yashoda,Rattan,Female,1996-02-18,dyallopa@example.net,9236696312,Pune,Karnataka,ADV0010,Medium,2970827,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.681595,2026-07-19
+CUST00174,Robert,Patil,Female,1982-08-17,rajuyamini@example.com,9482334538,Bengaluru,Tamil Nadu,ADV0020,Medium,2144420,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.662981,2026-07-19
+CUST00003,Kashvi,Sarma,Male,2002-09-19,pdara@example.org,9632719211,Bengaluru,Telangana,ADV0013,Medium,3017772,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.645289,2026-07-19
+CUST00334,Radhika,Jaggi,Female,2008-05-19,aarnanagarajan@example.net,9298704996,Hyderabad,Telangana,ADV0008,Medium,2893425,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.673898,2026-07-19
+CUST00410,Charvi,Chadha,Male,1966-11-12,zraj@example.net,9869119330,Pune,Telangana,ADV0019,High,1212335,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.679424,2026-07-19
+CUST00071,Divya,Krishnan,Male,1969-04-15,avarkey@example.net,9933404114,Hyderabad,Maharashtra,ADV0014,High,1077113,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.650081,2026-07-19
+CUST00210,Parth,Sane,Female,1982-10-11,padmanabhanlakshmi@example.net,9006977991,Hyderabad,Telangana,ADV0004,Medium,1014158,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.665317,2026-07-19
+CUST00064,Vincent,Mani,Male,1991-07-17,rbobal@example.org,9814763202,Chennai,Tamil Nadu,ADV0015,High,2105526,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.649353,2026-07-19
+CUST00385,Kashvi,Cherian,Female,1953-03-11,waidadey@example.net,9865241839,Chennai,Telangana,ADV0011,Low,1512736,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.677730,2026-07-19
+CUST00094,Jatin,Sha,Male,1971-12-01,lakshmi51@example.net,9171432881,Chennai,Karnataka,ADV0002,Medium,2319064,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.655453,2026-07-19
+CUST00486,Warinder,Saraf,Male,1969-05-11,anyadar@example.com,9749621470,Bengaluru,Karnataka,ADV0005,Low,962420,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.684687,2026-07-19
+CUST00186,Saksham,Yohannan,Female,1966-04-06,laksh19@example.net,9453778756,Pune,Maharashtra,ADV0016,Low,2191944,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.663758,2026-07-19
+CUST00034,Zarna,Shetty,Female,1953-06-13,jairajshan@example.org,9365341213,Pune,Karnataka,ADV0002,Medium,745093,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.647392,2026-07-19
+CUST00078,Krishna,Shah,Female,2004-08-23,williamrajagopal@example.org,9298362082,Pune,Tamil Nadu,ADV0004,High,1061660,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.652070,2026-07-19
+CUST00001,Wriddhish,Bhardwaj,Female,1964-07-04,chadavedika@example.org,9166944844,Pune,Telangana,ADV0007,Low,1459253,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.644644,2026-07-19
+CUST00012,Nakul,Bhandari,Male,2006-04-07,grewalekapad@example.net,9231191390,Chennai,Maharashtra,ADV0014,Medium,606177,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.646035,2026-07-19
+CUST00416,Vedika,Seshadri,Female,1969-08-01,michael99@example.com,9819795579,Bengaluru,Telangana,ADV0012,Low,862099,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.679851,2026-07-19
+CUST00023,Balvan,Singhal,Male,1963-06-10,tpalla@example.org,9361415646,Bengaluru,Telangana,ADV0016,Low,1028531,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.646718,2026-07-19
+CUST00073,Karan,Mani,Female,1975-12-13,bdara@example.net,9109747451,Chennai,Tamil Nadu,ADV0004,Low,494256,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.650272,2026-07-19
+CUST00183,Veda,Handa,Female,2006-01-24,chanchal34@example.com,9099585092,Bengaluru,Karnataka,ADV0011,Low,1683955,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.663582,2026-07-19
+CUST00132,Krisha,Narasimhan,Female,1997-09-14,sampathyashoda@example.com,9407943839,Chennai,Karnataka,ADV0014,High,778767,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.660055,2026-07-19
+CUST00411,Thomas,Deshpande,Female,1993-11-06,maanas45@example.org,9103848421,Pune,Telangana,ADV0001,Low,2950746,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.679501,2026-07-19
+CUST00194,Yuvraj,Ahuja,Female,1965-08-30,sanyaloke@example.com,9385451171,Chennai,Maharashtra,ADV0005,Low,1125184,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.664272,2026-07-19
+CUST00056,Qasim,Handa,Female,1963-02-02,umalhotra@example.net,9909990148,Pune,Karnataka,ADV0017,Low,2658146,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.648720,2026-07-19
+CUST00149,Diya,Mukherjee,Male,1980-06-06,ckulkarni@example.net,9369319644,Pune,Maharashtra,ADV0007,High,2364652,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.661181,2026-07-19
+CUST00019,Adweta,Edwin,Male,1993-07-12,handra@example.org,9648245888,Hyderabad,Karnataka,ADV0011,Low,421771,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.646472,2026-07-19
+CUST00205,Arin,Misra,Female,1977-05-23,ywali@example.org,9284027113,Chennai,Maharashtra,ADV0005,Low,958743,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.664999,2026-07-19
+CUST00079,Urvashi,Raj,Female,1972-12-06,warhibansal@example.org,9866647391,Hyderabad,Tamil Nadu,ADV0004,High,2139468,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.652174,2026-07-19
+CUST00501,Wriddhish,Bhardwaj,Female,1964-07-04,chadavedika@example.org,917525876051,Warangal,Sikkim,ADV0007,High,1419786,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.644644,2026-07-19
+CUST00502,Wriddhish,Bhardwaj,Female,1964-07-04,chadavedika@example.org,917525876051,Warangal,Sikkim,ADV0007,High,1419786,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.644644,2026-07-19
+CUST00503,Wriddhish,Bhardwaj,Female,1964-07-04,chadavedika@example.org,917525876051,Warangal,Sikkim,ADV0007,High,1419786,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.644644,2026-07-19
+CUST00504,Wriddhish,Bhardwaj,Female,1964-07-04,chadavedika@example.org,917525876051,Warangal,Sikkim,ADV0007,High,1419786,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.644644,2026-07-19
+CUST00505,Wriddhish,Bhardwaj,Female,1964-07-04,chadavedika@example.org,917525876051,Warangal,Sikkim,ADV0007,High,1419786,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.644644,2026-07-19
+CUST00506,Wriddhish,Bhardwaj,Female,1964-07-04,chadavedika@example.org,917525876051,Warangal,Sikkim,ADV0007,High,1419786,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.644644,2026-07-19
+CUST00507,Wriddhish,Bhardwaj,Female,1964-07-04,chadavedika@example.org,917525876051,Warangal,Sikkim,ADV0007,High,1419786,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.644644,2026-07-19
+CUST00508,Wriddhish,Bhardwaj,Female,1964-07-04,chadavedika@example.org,917525876051,Warangal,Sikkim,ADV0007,High,1419786,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.644644,2026-07-19
+CUST00509,Wriddhish,Bhardwaj,Female,1964-07-04,chadavedika@example.org,917525876051,Warangal,Sikkim,ADV0007,High,1419786,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.644644,2026-07-19
+CUST00510,Wriddhish,Bhardwaj,Female,1964-07-04,chadavedika@example.org,917525876051,Warangal,Sikkim,ADV0007,High,1419786,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.644644,2026-07-19
+CUST00511,Wriddhish,Bhardwaj,Female,1964-07-04,chadavedika@example.org,917525876051,Warangal,Sikkim,ADV0007,High,1419786,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.644644,2026-07-19
+CUST00512,Wriddhish,Bhardwaj,Female,1964-07-04,chadavedika@example.org,917525876051,Warangal,Sikkim,ADV0007,High,1419786,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.644644,2026-07-19
+CUST00513,Wriddhish,Bhardwaj,Female,1964-07-04,chadavedika@example.org,917525876051,Warangal,Sikkim,ADV0007,High,1419786,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.644644,2026-07-19
+CUST00514,Wriddhish,Bhardwaj,Female,1964-07-04,chadavedika@example.org,917525876051,Warangal,Sikkim,ADV0007,High,1419786,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.644644,2026-07-19
+CUST00515,Wriddhish,Bhardwaj,Female,1964-07-04,chadavedika@example.org,917525876051,Warangal,Sikkim,ADV0007,High,1419786,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.644644,2026-07-19
+CUST00516,Wriddhish,Bhardwaj,Female,1964-07-04,chadavedika@example.org,917525876051,Warangal,Sikkim,ADV0007,High,1419786,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.644644,2026-07-19
+CUST00517,Wriddhish,Bhardwaj,Female,1964-07-04,chadavedika@example.org,917525876051,Warangal,Sikkim,ADV0007,High,1419786,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.644644,2026-07-19
+CUST00518,Wriddhish,Bhardwaj,Female,1964-07-04,chadavedika@example.org,917525876051,Warangal,Sikkim,ADV0007,High,1419786,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.644644,2026-07-19
+CUST00519,Wriddhish,Bhardwaj,Female,1964-07-04,chadavedika@example.org,917525876051,Warangal,Sikkim,ADV0007,High,1419786,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.644644,2026-07-19
+CUST00520,Wriddhish,Bhardwaj,Female,1964-07-04,chadavedika@example.org,917525876051,Warangal,Sikkim,ADV0007,High,1419786,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.644644,2026-07-19
+CUST00521,Wriddhish,Bhardwaj,Female,1964-07-04,chadavedika@example.org,917525876051,Warangal,Sikkim,ADV0007,High,1419786,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.644644,2026-07-19
+CUST00522,Wriddhish,Bhardwaj,Female,1964-07-04,chadavedika@example.org,917525876051,Warangal,Sikkim,ADV0007,High,1419786,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.644644,2026-07-19
+CUST00523,Wriddhish,Bhardwaj,Female,1964-07-04,chadavedika@example.org,917525876051,Warangal,Sikkim,ADV0007,High,1419786,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.644644,2026-07-19
+CUST00524,Wriddhish,Bhardwaj,Female,1964-07-04,chadavedika@example.org,917525876051,Warangal,Sikkim,ADV0007,High,1419786,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.644644,2026-07-19
+CUST00525,Wriddhish,Bhardwaj,Female,1964-07-04,chadavedika@example.org,917525876051,Warangal,Sikkim,ADV0007,High,1419786,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:43.644644,2026-07-19
