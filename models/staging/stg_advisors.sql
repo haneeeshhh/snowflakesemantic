@@ -14,11 +14,7 @@ WITH RANKED AS(
         BATCH_ID,
         CAST(LOAD_DATE AS DATE) AS LOAD_DATE,
         RECORD_CREATED_TS,
-        RECORD_UPDATED_TS,
-        ROW_NUMBER() OVER(
-                    PARTITION BY ADVISOR_ID
-                    ORDER BY RECORD_UPDATED_TS DESC
-                ) AS RN
+        RECORD_UPDATED_TS
     FROM {{ source('raw', 'RAW_ADVISORS')}}
 )
 SELECT
@@ -33,6 +29,5 @@ SELECT
     BATCH_ID,
     LOAD_DATE,
     RECORD_CREATED_TS,
-    RECORD_UPDATED_TS,
-    RN
+    RECORD_UPDATED_TS
 FROM RANKED
