@@ -5,16 +5,19 @@ models:
   - name: stg_advisors
     description: Clean advisor data
 
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          arguments:
+            combination_of_columns:
+              - advisor_id
+              - record_updated_ts
     columns:
-
       - name: advisor_id
         data_tests:
           - not_null
-
       - name: advisor_name
         data_tests:
           - not_null
-
       - name: email
         data_tests:
           - not_null
@@ -33,13 +36,17 @@ models:
 
   - name: stg_customers
     description: Clean customer data
-
+    tests:
+    - dbt_utils.unique_combination_of_columns:
+        arguments:
+          combination_of_columns:
+            - customer_id
+            - record_updated_ts
     columns:
-
       - name: customer_id
         data_tests:
           - not_null
-
+        
       - name: advisor_id
         data_tests:
           - relationships:
@@ -78,8 +85,13 @@ models:
   - name: stg_accounts
     description: Clean account data
 
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          arguments:
+            combination_of_columns:
+              - account_id
+              - record_updated_ts
     columns:
-
       - name: account_id
         data_tests:
           - not_null
@@ -120,6 +132,12 @@ models:
   - name: stg_securities
     description: Clean securities data
 
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          arguments:
+            combination_of_columns:
+              - security_id
+              - record_updated_ts
     columns:
 
       - name: security_id
@@ -163,6 +181,7 @@ models:
 
       - name: transaction_id
         data_tests:
+          - unique
           - not_null
 
       - name: account_id
