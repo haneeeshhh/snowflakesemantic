@@ -1,0 +1,4 @@
+advisor_id,advisor_name,branch,email,phone,hire_date,status,source_system,batch_id,load_date,record_created_ts,record_updated_ts
+ADV0004,Abeer Dutta,Pune,roak@example.org,917812140441,2010-09-18,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:39.748147,2026-07-19
+ADV0017,Ishwar Yadav,Pune,harini14@example.com,916825873196,2011-07-24,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:39.748717,2026-07-19
+ADV0007,Chaaya Pathak,Delhi,ekarajbath@example.net,918791232393,2022-03-23,Active,Core Banking,BATCH_20260720,2026-07-20,2026-07-16 11:10:39.748271,2026-07-19
